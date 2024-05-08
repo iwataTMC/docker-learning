@@ -62,5 +62,3 @@ RUN jupyter-lab --generate-config && \
     go clean --modcache && \
     python3 -c "import jbang; jbang.exec('trust add https://github.com/jupyter-java'); jbang.exec('install-kernel@jupyter-java')"
 
-# --ip=* : enable external access
-#CMD ~/anaconda3/bin/jupyter-lab --no-browser --ip=*
