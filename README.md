@@ -43,22 +43,47 @@ Go、Java、Python、gRPC、ProtocolBuffersなどの開発環境を構築し、J
    - Statusが`Docker Desktop is Running`であることを確認する。
 3. ターミナルを起動する。
 4. `git clone　https://github.com/iwataTMC/docker-learning.git`で本リポジトリをクローンする。
+```
+git clone　https://github.com/iwataTMC/docker-learning.git
+```
 5. `cd docker-learning`でリポジトリに移動する。
+```
+cd docker-learning
+```
 6. `sh docker-build.sh`でDockerイメージをビルドする。
+```
+sh docker-build.sh
+```
 7. `sh docker-run.sh`でDockerコンテナを起動する。
+```
+sh docker-run.sh
+```
 
 # コンテナを終了する
 1. コンテナを終了する。
    - コンテナを終了するには、コンテナ内で`exit`を実行する。
+```
+exit
+```
+
 
 # コンテナ内で変更した内容を保存する
 1. コンテナを起動した状態で別のターミナルを開く。
 2. `docker ps`でコンテナIDまたはコンテナ名を確認する。
+```
+docker ps
+```
 3. `docker commit <コンテナIDまたはコンテナ名> <イメージ名>:<タグ>`でイメージを作成する。（タグ名は任意、`latest`を指定すると最新のイメージとして扱われる、`v1`などバージョンを指定することもできる）
-   - 例: `docker commit network network:latest`
+   - 例: 
+```
+docker commit network network:latest
+```
 
 # コンテナ内でJupyterLabを起動する
 1. コンテナ内で`jupyter-lab --no-browser --ip=0.0.0.0 --port=8888`でJupyterLabを起動する。
+```
+jupyter-lab --no-browser --ip=0.0.0.0 --port=8888
+```
 2. `http://127.0.0.1:8888/lab?token=<発行されたToken>`にアクセスする。
    - ターミナルに表示されたURLにアクセスする。
 3. JupyterLabを終了するには、ターミナルで`Ctrl + C`を押す。
