@@ -31,3 +31,21 @@
 ```
 docker -v /Users/<host user>/<user-dir>:/home/<docker user>/<docker-user-dir> -ti --rm --name network -p 8888:8888 network:latest /bin/bash
 ```
+
+# Appendix
+Linuxを学習するだけなら、本リポジトリのDockerfileではなく以下のイメージを利用することをオススメします。
+> 以下のイメージはDocker Hubに公開されている。
+- [busybox](https://hub.docker.com/_/busybox)（←オススメイメージ、よく使うコマンド詰め合わせセット）
+
+1. 実行コマンド
+```
+docker run -it --rm --name busybox busybox
+```
+2. 変更をコミットする（別のターミナルで）
+```
+docker commit busybox busybox:latest
+```
+3. コンテナを終了する
+```
+exit
+```
