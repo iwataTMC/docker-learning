@@ -61,6 +61,8 @@ Go、Java、Python、gRPC、ProtocolBuffersなどの開発環境を構築し、J
 1. コンテナ内で`jupyter-lab --no-browser --ip=0.0.0.0 --port=8888`でJupyterLabを起動する。
 2. `http://127.0.0.1:8888/lab?token=<発行されたToken>`にアクセスする。
    1. ターミナルに表示されたURLにアクセスする。
+3. JupyterLabを終了するには、ターミナルで`Ctrl + C`を押す。
+   1. `Shut down this Jupyter server (y/[n])?`と表示されるので、`y`を入力する。
 
 
 # ホスト側のディレクトリをコンテナ内にマウントする方法
