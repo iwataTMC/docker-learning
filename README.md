@@ -57,7 +57,7 @@ Go、Java、Python、gRPC、ProtocolBuffersなどの開発環境を構築し、J
    - 例: `docker commit network network:latest`
 
 # コンテナ内でJupyterLabを起動する
-1. コンテナ内で`jupyter-lab --ip=0.0.0.0 --port=8888`でJupyterLabを起動する。
+1. コンテナ内で`jupyter-lab --no-browser --ip=0.0.0.0 --port=8888`でJupyterLabを起動する。
 2. `http://localhost:8888`にアクセスする。
 
 
