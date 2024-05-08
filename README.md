@@ -75,14 +75,14 @@ mkdir /Users/<host user>/<host-dir-name>
 mkdir /home/<docker user>/<docker-dir-name>
 ```
 3. コンテナを起動する際に`-v`オプションを指定して実行する。
-- 例：ホスト側の`/Users/<host user>/<host-dir-name>`をコンテナ内の`/home/<docker user>/<docker-dir-name>`にマウントする場合
-> `<host user>, <host-dir-name>, <docker user>, <docker-dir-name>`は任意名に置き換えてください。
-
+   1. 例：ホスト側の`/Users/<host user>/<host-dir-name>`をコンテナ内の`/home/<docker user>/<docker-dir-name>`にマウントする場合
 ```
 docker run -v /Users/<host user>/<host-dir-name>:/home/<docker user>/<docker-dir-name> -ti --rm --name network -p 8888:8888 network:latest /bin/bash
 ```
-
 > [!NOTE]
+> `<host user>, <host-dir-name>, <docker user>, <docker-dir-name>`は任意名に置き換えてください。
+
+> [!TIP]
 > `docker-run.sh`を編集して、ホスト側のディレクトリをコンテナ内にマウントするように変更することもできます。
 > 2行目をコメントアウトし、3行目を有効にしてください。
 
