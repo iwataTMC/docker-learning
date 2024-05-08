@@ -67,7 +67,7 @@ Go、Java、Python、gRPC、ProtocolBuffersなどの開発環境を構築し、J
 
 # ホスト側のディレクトリをコンテナ内にマウントする方法
 ```
-docker -v /Users/<host user>/<user-dir>:/home/<docker user>/<docker-user-dir> -ti --rm --name network -p 8888:8888 network:latest /bin/bash
+docker run -v /Users/<host user>/<user-dir>:/home/<docker user>/<docker-user-dir> -ti --rm --name network -p 8888:8888 network:latest /bin/bash
 ```
 
 # Appendix
