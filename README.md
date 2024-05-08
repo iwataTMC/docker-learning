@@ -37,7 +37,7 @@ Go、Java、Python、gRPC、ProtocolBuffersなどの開発環境を構築し、J
 
 
 
-# コンテナ起動手順
+# コンテナを起動する
 1. [Docker Desktop](https://matsuand.github.io/docs.docker.jp.onthefly/desktop/mac/install/)をインストールする。
 2. Docker Desktopを起動する。
    1. Statusが`Docker Desktop is Running`であることを確認する。
