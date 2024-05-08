@@ -40,7 +40,7 @@ Go、Java、Python、gRPC、ProtocolBuffersなどの開発環境を構築し、J
 # コンテナを起動する
 1. [Docker Desktop](https://matsuand.github.io/docs.docker.jp.onthefly/desktop/mac/install/)をインストールする。
 2. Docker Desktopを起動する。
-   1. Statusが`Docker Desktop is Running`であることを確認する。
+   - Statusが`Docker Desktop is Running`であることを確認する。
 3. ターミナルを起動する。
 4. `git clone　https://github.com/iwataTMC/docker-learning.git`で本リポジトリをクローンする。
 5. `cd docker-learning`でリポジトリに移動する。
@@ -49,7 +49,7 @@ Go、Java、Python、gRPC、ProtocolBuffersなどの開発環境を構築し、J
 
 # コンテナを終了する
 1. コンテナを終了する。
-   1. コンテナを終了するには、コンテナ内で`exit`を実行する。
+   - コンテナを終了するには、コンテナ内で`exit`を実行する。
 
 # コンテナ内で変更した内容を保存する
 1. コンテナを起動した状態で別のターミナルを開く。
@@ -60,9 +60,9 @@ Go、Java、Python、gRPC、ProtocolBuffersなどの開発環境を構築し、J
 # コンテナ内でJupyterLabを起動する
 1. コンテナ内で`jupyter-lab --no-browser --ip=0.0.0.0 --port=8888`でJupyterLabを起動する。
 2. `http://127.0.0.1:8888/lab?token=<発行されたToken>`にアクセスする。
-   1. ターミナルに表示されたURLにアクセスする。
+   - ターミナルに表示されたURLにアクセスする。
 3. JupyterLabを終了するには、ターミナルで`Ctrl + C`を押す。
-   1. `Shut down this Jupyter server (y/[n])?`と表示されるので、`y`を入力する。
+   - `Shut down this Jupyter server (y/[n])?`と表示されるので、`y`を入力する。
 
 
 # ホスト側のディレクトリをコンテナ内にマウントする方法
@@ -75,7 +75,7 @@ mkdir /Users/<host user>/<host-dir-name>
 mkdir /home/<docker user>/<docker-dir-name>
 ```
 3. コンテナを起動する際に`-v`オプションを指定して実行する。
-   1. 例：ホスト側の`/Users/<host user>/<host-dir-name>`をコンテナ内の`/home/<docker user>/<docker-dir-name>`にマウントする場合
+   - 例：ホスト側の`/Users/<host user>/<host-dir-name>`をコンテナ内の`/home/<docker user>/<docker-dir-name>`にマウントする場合
 ```
 docker run -v /Users/<host user>/<host-dir-name>:/home/<docker user>/<docker-dir-name> -ti --rm --name network -p 8888:8888 network:latest /bin/bash
 ```
@@ -88,6 +88,7 @@ docker run -v /Users/<host user>/<host-dir-name>:/home/<docker user>/<docker-dir
 
 # Appendix
 Linuxを学習するだけなら、本リポジトリのDockerfileではなく以下のイメージを利用することをオススメします。
+> [!NOTE]
 > 以下のイメージはDocker Hubに公開されている。
 - [busybox](https://hub.docker.com/_/busybox)（←オススメイメージ、よく使うコマンド詰め合わせセット）
 
