@@ -37,7 +37,7 @@ Linuxを学習するだけなら、本リポジトリのDockerfileではなく�
 > 以下のイメージはDocker Hubに公開されている。
 - [busybox](https://hub.docker.com/_/busybox)（←オススメイメージ、よく使うコマンド詰め合わせセット）
 
-1. 実行コマンド
+1. コンテナ起動
 ```
 docker run -it --rm --name busybox busybox
 ```
