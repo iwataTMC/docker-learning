@@ -45,6 +45,7 @@ docker run -it --rm --name busybox busybox
 ```
 docker commit busybox busybox:latest
 ```
+> 変更内容が不要であれば、コミットせずにコンテナを終了する。
 3. コンテナを終了する
 ```
 exit
