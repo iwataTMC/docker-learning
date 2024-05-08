@@ -66,8 +66,20 @@ Go、Java、Python、gRPC、ProtocolBuffersなどの開発環境を構築し、J
 
 
 # ホスト側のディレクトリをコンテナ内にマウントする方法
+1. ホスト側でコンテナと共有したいディレクトリを作成する。
 ```
-docker run -v /Users/<host user>/<user-dir>:/home/<docker user>/<docker-user-dir> -ti --rm --name network -p 8888:8888 network:latest /bin/bash
+mkdir /Users/<host user>/<host-dir-name>
+```
+2. コンテナ内でホスト側と共有したいディレクトリを作成する。
+```
+mkdir /home/<docker user>/<docker-dir-name>
+```
+3. コンテナを起動する際に`-v`オプションを指定して実行する。
+- 例：ホスト側の`/Users/<host user>/<host-dir-name>`をコンテナ内の`/home/<docker user>/<docker-dir-name>`にマウントする場合
+> `<host user>, <host-dir-name>, <docker user>, <docker-dir-name>`は任意名に置き換えてください。
+
+```
+docker run -v /Users/<host user>/<host-dir-name>:/home/<docker user>/<docker-dir-name> -ti --rm --name network -p 8888:8888 network:latest /bin/bash
 ```
 
 # Appendix
