@@ -58,7 +58,8 @@ Go、Java、Python、gRPC、ProtocolBuffersなどの開発環境を構築し、J
 
 # コンテナ内でJupyterLabを起動する
 1. コンテナ内で`jupyter-lab --no-browser --ip=0.0.0.0 --port=8888`でJupyterLabを起動する。
-2. `http://localhost:8888`にアクセスする。
+2. `http://127.0.0.1:8888/lab?token=<発行されたToken>`にアクセスする。
+   1. ターミナルに表示されたURLにアクセスする。
 
 
 # ホスト側のディレクトリをコンテナ内にマウントする方法
