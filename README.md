@@ -26,6 +26,7 @@
 - Go環境の設定
 - Go環境変数の設定
 - jbangのインストールとJupyter Kernelの設定
+- [日本語表示の設定](https://jupyterlab.readthedocs.io/en/stable/user/language.html)
 7. キャッシュとテンポラリファイルの削除
 - pip cacheとaptキャッシュの削除
 8. Expose
