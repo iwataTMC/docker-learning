@@ -82,6 +82,7 @@ mkdir /home/<docker user>/<docker-dir-name>
 docker run -v /Users/<host user>/<host-dir-name>:/home/<docker user>/<docker-dir-name> -ti --rm --name network -p 8888:8888 network:latest /bin/bash
 ```
 
+> [!NOTE]
 > `docker-run.sh`を編集して、ホスト側のディレクトリをコンテナ内にマウントするように変更することもできます。
 > 2行目をコメントアウトし、3行目を有効にしてください。
 
@@ -98,6 +99,7 @@ docker run -it --rm --name busybox busybox
 ```
 docker commit busybox busybox:latest
 ```
+> [!NOTE]
 > 変更内容が不要であれば、コミットせずにコンテナを終了する。
 3. コンテナを終了する
 ```
