@@ -114,7 +114,7 @@ docker run -v /Users/<host user>/<host-dir-name>:/home/<docker user>/<docker-dir
 > 2行目をコメントアウトし、3行目を有効にしてください。
 
 # Appendix
-Linuxを学習するだけなら、本リポジトリのDockerfileではなく以下のイメージを利用することをオススメします。
+Linuxコマンドを学習するだけなら、本リポジトリのDockerfileではなく以下のイメージを利用することをオススメします。
 > [!NOTE]
 > 以下のイメージはDocker Hubに公開されている。
 - [busybox](https://hub.docker.com/_/busybox)（←オススメイメージ、よく使うコマンド詰め合わせセット）
