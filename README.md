@@ -82,6 +82,9 @@ mkdir /home/<docker user>/<docker-dir-name>
 docker run -v /Users/<host user>/<host-dir-name>:/home/<docker user>/<docker-dir-name> -ti --rm --name network -p 8888:8888 network:latest /bin/bash
 ```
 
+> `docker-run.sh`を編集して、ホスト側のディレクトリをコンテナ内にマウントするように変更することもできます。
+> 2行目をコメントアウトし、3行目を有効にしてください。
+
 # Appendix
 Linuxを学習するだけなら、本リポジトリのDockerfileではなく以下のイメージを利用することをオススメします。
 > 以下のイメージはDocker Hubに公開されている。
