@@ -26,7 +26,7 @@ RUN apt update && \
     pip install pip-review && \
     pip-review --auto && \
     pip install jupyterlab && \
-    pip install jupyterlab-language-pack-ja-JP \
+    pip install jupyterlab-language-pack-ja-JP && \
     pip install grpcio grpcio-tools grpcio-reflection && \
     apt install -y golang-${GOLANG_VER}-go protobuf-compiler && \
     ln -s ../lib/go-${GOLANG_VER}/bin/go /usr/bin/go && \
